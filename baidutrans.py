@@ -31,7 +31,7 @@ def translate(q):
     for _res in r.json()['trans_result']:
         res.append(_res['dst'])
     res = " | ".join(res)
-    print res.encode("utf-8")
+    print(res.encode("utf-8"))
 
 if __name__ == "__main__":
     ip = os.environ['POPCLIP_TEXT']
